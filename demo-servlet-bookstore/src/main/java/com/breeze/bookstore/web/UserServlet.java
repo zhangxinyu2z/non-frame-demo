@@ -26,9 +26,10 @@ import java.util.Properties;
  * @version v1.0
  * @date created in 2021-05-24 15:48
  */
-@WebServlet("/UserServlet")
+@WebServlet(name = "user",value = "/user")
 public class UserServlet extends BaseServlet {
-    private UserService userService = new UserService();
+    private static final long serialVersionUID = 1851493540588753551L;
+    private final UserService userService = new UserService();
 
     /**
      * 用户登录

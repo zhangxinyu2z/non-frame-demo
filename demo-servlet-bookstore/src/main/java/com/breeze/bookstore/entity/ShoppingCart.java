@@ -22,7 +22,7 @@ public class ShoppingCart {
      * 如果不存在，添加新的条目
      */
     public void add(CartItem cartItem) {
-        String bid = cartItem.getBook().getBid();
+        String bid = cartItem.getEbook().getBid();
         if (items.containsKey(bid)) {
             CartItem cartItem_old = items.get(bid);
             cartItem_old.setCount(cartItem_old.getCount() + 1);

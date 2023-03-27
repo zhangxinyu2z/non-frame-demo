@@ -17,7 +17,7 @@ import java.io.IOException;
  * @version v1.0
  * @date created in 2021-05-26 18:44
  */
-@WebFilter(filterName = "LoginFilter",urlPatterns = {"/CartServlet","/jsps/cart/*","/jsps/order/*","/OrderServlet"})
+@WebFilter(filterName = "LoginFilter",urlPatterns = {"/ShoppingCartServlet","/jsps/cart/*","/jsps/order/*","/OrderServlet"})
 public class LoginFilter implements Filter {
     @Override
     public void destroy() {

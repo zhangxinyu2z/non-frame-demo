@@ -17,8 +17,8 @@ import java.io.IOException;
  * @version v1.0
  * @date created in 2021-05-25 11:16
  */
-@WebServlet("/CartServlet")
-public class CartServlet extends BaseServlet {
+@WebServlet("/shoppingCart")
+public class ShoppingCartServlet extends BaseServlet {
     /**
      * 添加购物车
      * 页面提交传递商品id和数量
@@ -29,7 +29,7 @@ public class CartServlet extends BaseServlet {
         String bid = request.getParameter("bid");
         Ebook book = new EbookService().lookBookInfo(bid);
         CartItem cartItem = new CartItem();
-        cartItem.setBook(book);
+        cartItem.setEbook(book);
         cartItem.setCount(count);
         cart.add(cartItem);
         return "f:/jsps/cart/list.jsp";

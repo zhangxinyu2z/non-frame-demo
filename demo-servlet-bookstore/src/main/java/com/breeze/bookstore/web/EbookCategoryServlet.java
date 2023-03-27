@@ -16,8 +16,8 @@ import java.util.List;
  * @version v1.0
  * @date created in 2021-05-24 22:59
  */
-@WebServlet("/CategoryServlet")
-public class CategoryServlet extends BaseServlet {
+@WebServlet("/ebookCategory")
+public class EbookCategoryServlet extends BaseServlet {
     private EbookCategoryService categoryService = new EbookCategoryService();
 
     /**

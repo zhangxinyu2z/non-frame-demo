@@ -24,7 +24,7 @@ import java.util.List;
  * @version v1.0
  * @date created in 2021-05-25 13:04
  */
-@WebServlet("/OrderServlet")
+@WebServlet("/order")
 public class OrderServlet extends BaseServlet {
     private OrderService orderService = new OrderService();
 
@@ -51,7 +51,7 @@ public class OrderServlet extends BaseServlet {
             // 设置订单项的商品价格小计
             orderItem.setSubtotal(cartItem.getSubtotal());
             orderItem.setCount(cartItem.getCount());
-            orderItem.setEbook(cartItem.getBook());
+            orderItem.setEbook(cartItem.getEbook());
             orderItem.setOrder(order);
             orderItemList.add(orderItem);
         }

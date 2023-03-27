@@ -16,8 +16,8 @@ import java.util.List;
  * @version v1.0
  * @date created in 2021-05-24 23:16
  */
-@WebServlet("/BookServlet")
-public class BookServlet extends BaseServlet {
+@WebServlet("/ebook")
+public class EbookServlet extends BaseServlet {
     private EbookService ebookService = new EbookService();
 
     /**

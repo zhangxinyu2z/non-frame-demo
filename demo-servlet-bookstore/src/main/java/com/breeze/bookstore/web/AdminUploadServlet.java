@@ -30,7 +30,7 @@ import java.util.Map;
  * @version v1.0
  * @date created in 2021-05-25 21:47
  */
-@WebServlet("/AdminUploadServlet")
+@WebServlet("/upload")
 public class AdminUploadServlet extends HttpServlet {
     private EbookCategoryService ebookCategoryService = new EbookCategoryService();
     private EbookService ebookService = new EbookService();
